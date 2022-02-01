@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="heading">
+			<h3>Memory <span>Gallery</span></h3>
+		</div>
+		<nav>
+			<div class="items">
+				<span class="item active"><a href="index.html">Home</a></span>
+				<span class="item"><a href="memory.html">Memories</a></span>
+				<span class="item"><a href="about.html">About Us</a></span>
+				<span class="item"><a href="#">Profile</a></span>
+				<span class="item"><a href="contact.html">Contact us</a></span>
+				<span class="item"><a href="login.html">Login</a></span>
+			</div>	
+		</nav>
+		
+		
+	</div>
+	<!---Upto here the menu page is declared--->
+	<div class="full-img" id="fullImgBox">
+		<img src="11.jpg" id="fullImg">
+		<span onclick="closeFullImg()"> X </span>
+	</div>
+	<div class="img-gallery">
+			<img src="11.jpg" onclick="openFullImg(this.src)">
+			<img src="22.jpg" onclick="openFullImg(this.src)">
+			<img src="33.jpg" onclick="openFullImg(this.src)">
+			<img src="44.jfif" onclick="openFullImg(this.src)">
+			<img src="55.jpg" onclick="openFullImg(this.src)">
+			<img src="66.jpg" onclick="openFullImg(this.src)">
+			<img src="77.jfif" onclick="openFullImg(this.src)">
+			<img src="88.jpg" onclick="openFullImg(this.src)">
+			<img src="99.jpg" onclick="openFullImg(this.src)">
+			
+	</div>
+	<!---Here onwards footer class is started--->
+	<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="contact.html">Contact us</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>......</h4>
+  	 			<ul>
+  	 				<li><a href="#" target="_blank">watch</a></li>
+  	 				<li><a href="#" target="_blank">bag</a></li>
+  	 				<li><a href="#" target="_blank">shoes</a></li>
+  	 				<li><a href="#" target="_blank">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+					<a href="https://www.youtube.com/c/manatechnologyManu" target="_blank"><i class="fab fa-youtube"></i></a>
+  	 				<a href="https://manublogsmanu.blogspot.com/" target="_blank"><i class="fab fa-blogger-b"></i></a>
+					<a href="https://www.facebook.com/manojkumar.devisetti" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+  	 				<a href="https://www.instagram.com/loverboy_manoj/" target="_blank"><i class="fab fa-instagram"></i></a>
+  	 				<a href="https://t.me/manueditzmanumanueditz" target="_blank"><i class="fab fa-telegram"></i></a>
+					
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+	
+<script>
+	var fullImgBox=document.getElementById("fullImgBox");
+	var fullImg=document.getElementById("fullImg");
+	var decp=document.getElementById("decp");
+	
+	function openFullImg(pic){
+		fullImgBox.style.display="flex";
+		fullImg.src=pic;
+	}
+	
+	function closeFullImg(){
+		fullImgBox.style.display="none";
+	}
+</script>
+</body>
+</html>
